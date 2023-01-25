@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
-import org.app.interfaces.ISewaBukuInterface;
+import org.app.interfaces.ISewaBukuService;
 import org.app.models.Buku;
 import org.app.models.SewaBuku;
 import org.app.models.dto.BukuDTO;
@@ -17,7 +17,7 @@ import org.app.responses.SewaBukuResponse;
 import org.app.responses.SimpleResponse;
 
 @ApplicationScoped
-public class SewaBukuService implements ISewaBukuInterface {
+public class SewaBukuService implements ISewaBukuService {
     @Inject
     EntityManager em;
 

@@ -11,7 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.app.interfaces.ISewaBukuInterface;
+import org.app.interfaces.ISewaBukuService;
 import org.app.requests.SewaBukuRequest;
 import org.app.requests.TambahBukuRequest;
 
@@ -21,7 +21,7 @@ import org.app.requests.TambahBukuRequest;
 @Consumes(MediaType.APPLICATION_JSON)
 public class SewaBukuController {
     @Inject
-    ISewaBukuInterface sewaBukuService;
+    ISewaBukuService sewaBukuService;
 
     @POST
     public Response createBookResponse(SewaBukuRequest body) {

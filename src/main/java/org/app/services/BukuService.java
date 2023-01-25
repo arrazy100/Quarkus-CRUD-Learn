@@ -10,14 +10,14 @@ import javax.transaction.Transactional;
 import org.app.responses.BukuResponse;
 import org.app.responses.ListBukuResponse;
 import org.app.responses.SimpleResponse;
-import org.app.interfaces.IBukuInterface;
+import org.app.interfaces.IBukuService;
 import org.app.models.Buku;
 import org.app.models.dto.BukuDTO;
 import org.app.models.mappers.BukuMapper;
 import org.app.requests.BukuRequest;
 
 @ApplicationScoped
-public class BukuService implements IBukuInterface {
+public class BukuService implements IBukuService {
     @Inject
     EntityManager em;
 

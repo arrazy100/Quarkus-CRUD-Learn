@@ -5,7 +5,7 @@ import org.app.responses.BukuResponse;
 import org.app.responses.ListBukuResponse;
 import org.app.requests.BukuRequest;
 
-public interface IBukuInterface {
+public interface IBukuService {
     SimpleResponse createBook(BukuRequest body);
     BukuResponse getBook(Long id);
     ListBukuResponse getAllBooks();
